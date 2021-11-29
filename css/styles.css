@@ -28,7 +28,6 @@
 
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -44,35 +43,39 @@
 
 /*site nav*/
 
-.site-nav .link {
+.site-nav .site-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  text-decoration: none;
 
   color: var(--title-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav .site-nav-link.current {
   color: var(--accent-color);
 }
 
-.adress-nav .link {
+.adress-nav .adress-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  text-decoration: none;
+
   color: var(--primary-text-color);
 }
 
-.adress-nav .link:hover,
-.adress-nav .link:focus {
+.adress-nav .adress-nav-link:hover,
+.adress-nav .adress-nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -103,8 +106,8 @@
   letter-spacing: 0.06em;
 
   cursor: pointer;
-  background-color: #f5f4fa;
-  color: var(--title-text-color);
+  background-color: var(--accent-color);
+  color: var(--title-second-text-color);
 }
 
 .hero .buttons:hover,
@@ -121,6 +124,7 @@
 }
 
 .features-list .title {
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -152,7 +156,6 @@
 }
 
 .team-list .post {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -177,20 +180,22 @@
 
 .footer .link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  text-decoration: none;
 
   color: var(--title-second-text-color);
 }
 
 .footer .link-rgb {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  text-decoration: none;
 
   color: rgba(255, 255, 255, 0.6);
 }
@@ -202,7 +207,7 @@
 
 /*portfolio only*/
 
-.filter .buttons {
+.projects-filter .projects-filter-buttons {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -214,8 +219,8 @@
   color: var(--title-text-color);
 }
 
-.filter .buttons:hover,
-.filter .buttons:focus {
+.projects-filter .projects-filter-buttons:hover,
+.projects-filter .projects-filter-buttons:focus {
   color: var(--title-second-text-color);
   background-color: var(--accent-color);
 }
@@ -230,7 +235,6 @@
 }
 
 .projects-list .projects-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
